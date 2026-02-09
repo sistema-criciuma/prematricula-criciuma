@@ -325,7 +325,7 @@ def load_school_data_cached(escola: str, is_sme: bool) -> list[dict]:
 
 def main():
     st.set_page_config(page_title="Pré-matrícula Criciúma - Portal", layout="wide")
-    st.title("Pré-matrícula Criciúma - Portal provisório")
+    st.title("Pré-matrícula Criciúma - Portal SME")
 
     s = load_secrets()
     token = str(s["APPS_SCRIPT_TOKEN"]).strip()
@@ -556,3 +556,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
